@@ -205,7 +205,7 @@
                         <li class="scrollbar-item">
                             <div class="card">
 
-                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                                <!-- <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
                                     <img src="./assets/images/portfolio-5.jpg" width="600" height="675" loading="lazy"
                                         alt="Viva Mercury" class="img-cover">
                                 </figure>
@@ -218,7 +218,7 @@
 
                                     <p class="card-text">Image</p>
 
-                                </a>
+                                </a> -->
 
                             </div>
                         </li>
@@ -226,7 +226,7 @@
                         <li class="scrollbar-item">
                             <div class="card">
 
-                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                                <!-- <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
                                     <img src="./assets/images/portfolio-6.jpg" width="600" height="675" loading="lazy"
                                         alt="Santa Onera" class="img-cover">
                                 </figure>
@@ -239,7 +239,7 @@
 
                                     <p class="card-text">Image</p>
 
-                                </a>
+                                </a> -->
 
                             </div>
                         </li>
@@ -360,7 +360,7 @@
 
                         </li>
 
-                        <li class="timeline-item">
+                        <!-- <li class="timeline-item">
 
                             <h3 class="item-period">June, 2021 - September, 2021</h3>
 
@@ -379,7 +379,7 @@
                             <p class="item-address">State Department of interior and citizen services, Directorate of
                                 immigration services</p>
 
-                        </li>
+                        </li> -->
 
                         <li class="timeline-item">
 
