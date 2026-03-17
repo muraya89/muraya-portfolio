@@ -1,8 +1,12 @@
 <?php
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use Dotenv\Dotenv;
 
 require '../vendor/autoload.php'; // Composer autoload
+
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../'); // or wherever your .env is
+$dotenv->load();
 
 // --- CONFIGURATION ---
 $isLocal = true; // set false on production
@@ -11,11 +15,11 @@ $errorMessage = '';
 // SMTP settings for local (Mailtrap) and production
 $smtpSettings = $isLocal
     ? [
-        'host' => 'smtp.mailtrap.io',
-        'username' => 'effecb4418737c',
-        'password' => 'aed785fe86da59',
-        'port' => 587,
-        'secure' => 'tls'
+        'host' => $_ENV['MAIL_HOST'],
+        'username' => $_ENV['MAIL_USERNAME'],
+        'password' => $_ENV['MAIL_PASSWORD'],
+        'port' => $_ENV['MAIL_PORT'],
+        'secure' => ''
     ]
     : [
         'host' => 'smtp.gmail.com',
@@ -69,7 +73,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->SMTPSecure = $smtpSettings['secure'];
         $mail->Port       = $smtpSettings['port'];
 
-        $mail->setFrom($email, $name);
+        $fromEmail = $isLocal ? 'noreply@portfolio.com' : getenv('MAIL_FROM_ADDRESS');
+        $mail->setFrom($fromEmail, 'Portfolio Contact Form');
         $mail->addAddress('susanmuraya028@gmail.com'); // your inbox
         $mail->addReplyTo($email, $name);
 
@@ -83,10 +88,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }else{
             $errorMessage = "Yikes! The internet goblins ate your message. Send it again!";
             $_SESSION['error'] = $errorMessage;
+            
         };
     } catch (Exception $e) {
         $errorMessage = "Yikes! The internet goblins ate your message. Send it again!";
-        $_SESSION['error'] = $errorMessage;
+        $_SESSION['error'] = "Mail error: " . $mail->ErrorInfo . " | Exception: " . $e->getMessage() . " | SMTP Debug: " . $mail->SMTPDebug." | From: " . $fromEmail . " | Host: " .  $smtpSettings['host'] . " | Username: " . $smtpSettings['username'] . " | Port: " . $smtpSettings['port'] . " | Secure: " . $smtpSettings['secure'];
+        // $_SESSION['error'] = $errorMessage;
     }
     
     header("Location:"  . $_SERVER['HTTP_REFERER'].'#contact');
