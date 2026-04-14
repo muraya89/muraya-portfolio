@@ -185,6 +185,27 @@
                             <div class="card">
 
                                 <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                                    <img src="./assets/images/Business Card.png" width="600" height="675" loading="lazy"
+                                        alt="Viva Mercury" class="img-cover">
+                                </figure>
+
+                                <a href="" class="card-content">
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+
+                                    <h3 class="h3 card-title">Susan Muraya</h3>
+
+                                    <p class="card-text">Business Card</p>
+
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="card">
+
+                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
                                     <img src="./assets/images/eastgoldtours-2.jpg" width="200" height="675"
                                         loading="lazy" alt="East Gold Tours" class="img-fill">
                                 </figure>
@@ -196,27 +217,6 @@
                                     <h3 class="h3 card-title">East Gold Tours</h3>
 
                                     <p class="card-text">Travel Agency</p>
-
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li class="scrollbar-item">
-                            <div class="card">
-
-                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                                    <img src="./assets/images/Business Card.png" width="600" height="675" loading="lazy"
-                                        alt="Viva Mercury" class="img-cover">
-                                </figure>
-
-                                <a href="" class="card-content">
-
-                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-
-                                    <h3 class="h3 card-title">Business Card</h3>
-
-                                    <p class="card-text">Susan Muraya</p>
 
                                 </a>
 
