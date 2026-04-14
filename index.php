@@ -189,7 +189,7 @@
                                         alt="Viva Mercury" class="img-cover">
                                 </figure>
 
-                                <a href="" class="card-content">
+                                <a href="https://business-card-production-9157.up.railway.app/" class="card-content">
 
                                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
 
