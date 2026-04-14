@@ -205,20 +205,41 @@
                         <li class="scrollbar-item">
                             <div class="card">
 
-                                <!-- <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
-                                    <img src="./assets/images/portfolio-5.jpg" width="600" height="675" loading="lazy"
+                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                                    <img src="./assets/images/Business Card.png" width="600" height="675" loading="lazy"
                                         alt="Viva Mercury" class="img-cover">
                                 </figure>
 
-                                <a href="#" class="card-content">
+                                <a href="" class="card-content">
 
                                     <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
 
-                                    <h3 class="h3 card-title">Viva Mercury</h3>
+                                    <h3 class="h3 card-title">Business Card</h3>
 
-                                    <p class="card-text">Image</p>
+                                    <p class="card-text">Susan Muraya</p>
 
-                                </a> -->
+                                </a>
+
+                            </div>
+                        </li>
+
+                        <li class="scrollbar-item">
+                            <div class="card">
+
+                                <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                                    <img src="./assets/images/kiseb.png" width="600" height="675" loading="lazy"
+                                        alt="Viva Mercury" class="img-cover">
+                                </figure>
+
+                                <a href="https://students.kiseb.or.ke/" class="card-content">
+
+                                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+
+                                    <h3 class="h3 card-title">KISEB</h3>
+
+                                    <p class="card-text">Student portal</p>
+
+                                </a>
 
                             </div>
                         </li>
